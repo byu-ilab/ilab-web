@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="banner2 borders padbottom20">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+	<h1>Sentiment Analysis</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="banner1">
+  <div class="container">
+
+    <div class="row-fluid">
+      <div class="span12">
+	<div class="right">
+	<img class="height-300" src="/static/img/sentiment-us.png">
+	<p class="caption">Labeled sentiment of tweets in Farsi about the U.S.</p>
+	</div>
+	<p>Twitter has played a prominent role in the political and
+	  social changes taking place in the Middle East. We are exploring
+	  how to automatically classifying the political
+	  sentiment of tweets, so that we can better quantify
+	  political feelings of people around the world and track
+	  their changes over time.</p>
+	<p>Questions that we are examining include how do Iranians
+	  using Twitter feel about the UN sanctions? Their country's
+	  nuclear weapons program? Their own government? The United
+	  States?</p>
+	<p>Sentiment analysis with Twitter is harder due to the short
+	  text and use of jargon or abbreviations. Major work has been
+	  done with movie or automobile reviews, but in these cases
+	  the sentiment is usually easier to detect. When considering
+	  the Middle East, opinions are usually expressed in more
+	  subtle or indirect ways. In addition, many of the tools used
+	  for analyzing English, such as sentiment lexicons and
+	  part-of-speech taggers, are in their infancy with Farsi.</p>
+	<p>We are examining various machine learning methods,
+	  including meta-learning, to help improve the accuracy of
+	  sentiment classification for this problem.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

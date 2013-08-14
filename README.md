@@ -1,4 +1,3 @@
-web-pages
-=========
+Internet Research Lab web pages
+===============================
 
-Web pages for Internet Research Lab

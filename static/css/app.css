@@ -1,8 +1,6 @@
 /* General */
 
 body {
-/*    font-family: Sans !important;*/
-    font-family: 'Droid Sans' !important;
     font-family: 'Lato' !important;
 }
 
@@ -20,8 +18,9 @@ body {
     margin-right: 20px;
 }
 
-.nav {
+.nav a {
     margin-top: 10px !important;
+    color: #333 !important;
 }
 
 .navbar {
@@ -42,8 +41,6 @@ body {
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active a:hover, .navbar .nav > .active > a:focus {
-    background-color: #3588b6;
-    color: white;
     background-color: #86bddc;
     color: #333;
     box-shadow: none;
@@ -78,38 +75,15 @@ body {
 
 /* Banner */
 
-.banner1 {
-    font-size: 1.2em;
-}
-
-.banner2 {
+.banner {
     background-color: #86bddc;
     color: #333;
+    padding: 5px;
  }
 
-.banner3 {
+.text {
     font-size: 1.2em;
-    background: #e4e4e4;
-    background-color: white;
     color: #666;
-}
-
-.banner4 {
-    background: #f3ffe2;
-    color: #eee;
-    background: #e4e4e4;
-    color: #666;
-    padding: 5px;
-}
-
-.banner5 {
-    background: #eb7f00;
-    color: #eee;
-}
-
-.banner6 {
-    background: #e4e4e4;
-    color: #black;
 }
 
 /* Front Page */
@@ -146,7 +120,7 @@ body {
 /* GitHub ribbon */
 
 #forkongithub a {
-    background-color: #87dc86;
+    background-color: #86bddc;
     color:#333;
     text-decoration:none;
     text-align:center;
@@ -159,7 +133,7 @@ body {
 }
 
 #forkongithub a:hover {
-    background-color: #87dc86;
+    background-color: #86bddc;
     color:#333;
 }
 
@@ -203,6 +177,7 @@ body {
 /* Misc */
 
 h1 {
+    font-size: 2em;
     color: #333;
 }
 
@@ -211,20 +186,25 @@ h2 {
     margin-bottom: 0px;
 }
 
+hr {
+    margin: 5px 100px;
+    border-top: 1px solid #ccc;
+}
+
 .big {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .small {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .indent {
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
 .spacing li {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .spacing10 li {
@@ -250,11 +230,6 @@ h2 {
 
 .pad10 {
     padding: 10px 0px;
-}
-
-.borders {
-    color: #333;
-    box-shadow: 0px 0px 0px 0px #888888;
 }
 
 .caption {

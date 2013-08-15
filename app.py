@@ -13,10 +13,8 @@ def index():
 @app.route('/<directory>',defaults={'page':''})
 @app.route('/<directory>/<page>')
 def show(directory,page):
-    print page
     if not page:
         return render_template(directory+'.html',active=directory)
-    print directory
     return render_template(directory+"/" + page + '.html',active=directory)
     
 

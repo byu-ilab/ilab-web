@@ -1,6 +1,7 @@
 /* General */
 
 body {
+    font-family: "Open Sans", "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
 }
 
 .container {
@@ -15,45 +16,74 @@ body {
 
 /* Menu */
 
+.navbar .brand {
+    text-shadow: none;
+    font-size: 26px;
+    color: white;
+}
+
 .logo {
     float: left;
     border: none;
     margin-right: 20px;
 }
 
+.nav {
+}
+
 .nav a {
-    margin-top: 10px !important;
     text-decoration: none;
 }
 
 .navbar {
-/*    margin-bottom: 10px;*/
+    margin-bottom: 0px;
+    background-color: #394755;
+    padding: 10px 0;
 }
 
 .navbar-inner {
-    margin-top: 10px;
-    background-color: white;
+    background-color: #394755;
     background-image: none;
     border: none;
     box-shadow: none;
-    font-size: 1.2em;
+    border-radius: 0;
+    padding: 0;
 }
 
 .navbar .brand {
-    padding: 8px 20px 10px;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active a:hover, .navbar .nav > .active > a:focus {
-    background-color: #628cb6;
+    background-color: #394755;
     color: white;
+    box-shadow: none;
+    text-shadow: none;
+    border-bottom: 1px solid #d6dfe5;
+}
+
+.navbar .nav > li > a {
+    font-size: 16px;
+    color: white;
+    text-shadow: none;
+}
+
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover { 
+    color: white;
+    background-color: #394755;
+    outline: none;
+}
+
+.navbar .nav > li > a:hover {
+    background-color: #394755;
+    color: white;
+    border-bottom: 1px solid #d6dfe5;
     box-shadow: none;
     text-shadow: none;
 }
 
-.navbar .nav > li > a:hover {
-    background: #eee;
-    box-shadow: none;
-    text-shadow: none;
+.navbar .nav li.dropdown>a .caret, .navbar .nav li.dropdown>a:hover .caret, .navbar .nav li.dropdown>a:focus .caret {
+    border-top-color: white !important;
+    border-bottom-color: white !important;
 }
 
 #menu-donate a {
@@ -64,17 +94,12 @@ body {
 }
 
 #affiliation {
-    margin-top: 16px;
 }
 
-.affiliation {
-    font-size: 1.2em;
+#affiliation img {
+    height: 50px;
 }
 
-.affiliation a {
-    color: #333;
-    text-decoration: none;
-}
 
 /* Links */
 
@@ -233,7 +258,7 @@ hr {
 }
 
 .small {
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 .plain {
@@ -290,8 +315,6 @@ hr {
 
 .right {
     float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
 }
 
 .left {

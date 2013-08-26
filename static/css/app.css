@@ -47,7 +47,7 @@ body {
     border: none;
     box-shadow: none;
     border-radius: 0;
-    padding: 0;
+    padding: 0 25px;
 }
 
 .navbar .brand {
@@ -62,7 +62,6 @@ body {
 }
 
 .navbar .nav > li > a {
-    font-size: 16px;
     color: white;
     text-shadow: none;
 }
@@ -399,4 +398,5 @@ pre {
     font-size: 0.9em;
     padding: 5px;
     background-color: #990011;
+    font-weight: normal;
 }

@@ -397,5 +397,6 @@ pre {
 
 .label-success {
     font-size: 0.9em;
-    padding: 4px;
+    padding: 5px;
+    background-color: #990011;
 }

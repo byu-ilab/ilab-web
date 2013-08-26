@@ -1,13 +1,16 @@
 /* General */
 
 body {
-    font-family: 'Lato' !important;
 }
 
 .container {
     width: 94%;
     max-width: 1200px;
     margin: 0px auto;
+}
+
+.breadcrumbs {
+    padding-top: 5px;
 }
 
 /* Menu */
@@ -20,7 +23,7 @@ body {
 
 .nav a {
     margin-top: 10px !important;
-    color: #333 !important;
+    text-decoration: none;
 }
 
 .navbar {
@@ -41,8 +44,8 @@ body {
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active a:hover, .navbar .nav > .active > a:focus {
-    background-color: #86bddc;
-    color: #333;
+    background-color: #628cb6;
+    color: white;
     box-shadow: none;
     text-shadow: none;
 }
@@ -66,23 +69,56 @@ body {
 
 .affiliation {
     font-size: 1.2em;
-    font-weight: bold;
 }
 
 .affiliation a {
     color: #333;
+    text-decoration: none;
+}
+
+/* Links */
+
+a {
+    color: #ee8800;
+    color: #990011;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
 }
 
 /* Banner */
 
+.stripe {
+    background-color: #628cb6;
+    background-color: #333;
+    height: 10px;
+}
+
 .banner {
-    background-color: #86bddc;
-    color: #333;
-    padding: 5px;
- }
+    background-color: #628cb6;
+    background-color: #333;    
+    color: white;
+}
 
 .text {
     font-size: 1.2em;
+    color: #333;
+}
+
+.white {
+    padding-top: 10px;
+}
+
+.gray {
+    background: #f5f5f5;
+    color: #333;
+    padding-top: 10px;
+}
+
+.light-gray {
+    background: #e4e4e4;
     color: #666;
 }
 
@@ -90,9 +126,15 @@ body {
 
 .title {
     text-align: center;
-    font-size: 5.5em;
+    font-size: 1em;
     line-height: 1.1em;
     font-weight: normal;
+    color: white;
+    padding: 5px;
+}
+
+.project-title {
+    font-size: 1.2em;
 }
 
 .subtitle {
@@ -105,7 +147,7 @@ body {
 /* Footer */
 
 #footer {
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 #footer a {
@@ -120,8 +162,8 @@ body {
 /* GitHub ribbon */
 
 #forkongithub a {
-    background-color: #86bddc;
-    color:#333;
+    background:#990011;
+    color:#fff;
     text-decoration:none;
     text-align:center;
     font-weight:bold;
@@ -133,24 +175,8 @@ body {
 }
 
 #forkongithub a:hover {
-    background-color: #86bddc;
-    color:#333;
-}
-
-#forkongithub a::before, #forkongithub a::after {
-    content:"";
-    width:100%;
-    display:block;
-    position:absolute;
-    top:1px;
-    left:0;
-    height:1px;
-    background:#fff;
-}
-
-#forkongithub a::after {
-    bottom:1px;
-    top:auto;
+    background-color: #111;
+    color:#fff;
 }
 
 @media screen and (min-width:800px) {
@@ -174,16 +200,27 @@ body {
     }
 }
 
+/* Front Page */
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
 /* Misc */
 
 h1 {
     font-size: 2em;
-    color: #333;
 }
 
 h2 {
-    font-size: 1.2em;
-    margin-bottom: 0px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+h2 a {
 }
 
 hr {
@@ -197,6 +234,10 @@ hr {
 
 .small {
     font-size: 0.7em;
+}
+
+.plain {
+    list-style-type: none;
 }
 
 .indent {
@@ -220,8 +261,8 @@ hr {
     padding-bottom: 10px;
 }
 
-.top15 {
-    margin-top: 15px;
+.top10 {
+    margin-top: 10px;
 }
 
 .pad20 {
@@ -270,7 +311,8 @@ hr {
 }
 
 .height-400 {
-    max-height: 400px;
+    max-height: 420px;
+    margin-bottom: 15px;
 }
 
 .height-550 {
@@ -331,4 +373,6 @@ pre {
 }
 
 .label-success {
+    font-size: 0.9em;
+    padding: 4px;
 }

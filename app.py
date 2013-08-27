@@ -6,6 +6,8 @@ from flask_frozen import Freezer
 app = Flask(__name__)
 freezer = Freezer(app)
 
+app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
+
 @app.route('/')
 def index():
     return render_template('index.html',active='index')

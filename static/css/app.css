@@ -54,11 +54,16 @@ body {
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active a:hover, .navbar .nav > .active > a:focus {
-    background-color: #394755;
+    background-color: #394755 !important;
     color: white;
     box-shadow: none;
     text-shadow: none;
     border-bottom: 1px solid #d6dfe5;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    color: white;
+    background-color: #394755 !important;
 }
 
 .navbar .nav > li > a {
@@ -105,11 +110,13 @@ body {
 a {
     color: #ee8800;
     color: #990011;
-    text-decoration: underline;
+    color: #6DA0C8;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 a:hover {
-    color: black;
+    color: #6DA0C8;
 }
 
 /* Banner */
@@ -242,9 +249,13 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: normal;
+    margin: 20px 0px 0px 0px;
 }
 
 h2 a {
+}
+
+h2 a:hover {
 }
 
 hr {
@@ -275,6 +286,11 @@ hr {
 .spacing10 li {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.spacing20 li {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .padbottom20 {

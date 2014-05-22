@@ -2,6 +2,10 @@
 
 {% block page %}
 
+<div class="container breadcrumbs">
+  <p>» Research » <a href="/research/sentiment-analysis">Sentiment Analysis</a></p>
+</div>
+
 <div class="container">
   <div class="row-fluid">
     <div class="span12">
@@ -12,11 +16,7 @@
 
 <div class="container text">
   <div class="row-fluid">
-    <div class="span12">
-      <div class="right">
-	<img class="height-300" src="/static/img/sentiment-us.png">
-	<p class="caption">Labeled sentiment of tweets in Farsi about the U.S.</p>
-      </div>
+    <div class="span5">
       <p>Twitter has played a prominent role in the political and
 	social changes taking place in the Middle East. We are exploring
 	how to automatically classifying the political
@@ -38,6 +38,10 @@
       <p>We are examining various machine learning methods,
 	including meta-learning, to help improve the accuracy of
 	sentiment classification for this problem.</p>
+    </div>
+    <div class="offset1 span6">
+      <img class="height-300" src="/static/img/sentiment-us.png">
+      <p class="caption">Labeled sentiment of tweets in Farsi about the U.S.</p>
     </div>
   </div>
 </div>

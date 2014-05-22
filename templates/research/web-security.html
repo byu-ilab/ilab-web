@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container breadcrumbs">
+  <p>» Research » <a href="/research/web-security">Web Security</a></p>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Web Security</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container text">
+  <div class="row-fluid">
+    <div class="span5">
+      <p>Communicating securely over the Internet requires
+	authenticating the identity of a website to establish
+	trust. Currently the web uses TLS to validate digital
+	certificates signed by certificate authorities.
+      </p>
+
+      <p>
+	This validation system is currently being compromised by the
+	use of TLS proxies, which can act as a man-in-the-middle
+	(MitM) for TLS connections. A TLS proxy can issue a substitute
+	certificate for any site the user visits, so that the user
+	establishes an encrypted connection to the proxy rather than
+	the desired web site. The proxy can then decrypt and monitor
+	or modify all user traffic, before passing it along via a
+	second encrypted channel to the desired web site.
+      </p>
+
+      <p>
+	The use of TLS proxies to intercept encrypted traffic is
+	controversial since the same mechanism can be used for both
+	benevolent purposes, such as protecting against malware, and
+	for malicious purposes, such as identity theft or warrantless
+	government surveillance.
+      </p>
+      
+      <p>
+	To understand the prevalence and uses of these proxies, we
+	have built a TLS proxy measurement tool and deployed it via a
+	Google AdWords campaign. We are in the process of publishing
+	our findings from this study.</p>
+
+      <p>We are also working on proxy measurement for mobile devices
+	and mechanisms to thwart proxies that wish to remain
+	undetected.  We are interested in mechanisms to require
+	proxies to identify themselves and request user opt-in.
+      </p>
+      
+    </div>
+    <div class="offset1 span6">
+      <img class="height-250" src="/static/img/tls-proxy-measurement.png">
+      <p class="caption">TLS proxy measurement</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

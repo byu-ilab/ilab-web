@@ -1,7 +1,7 @@
 /* General */
 
 body {
-    font-family: "Open Sans", "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+    font-family: 'Volkorn', serif;
 }
 
 .container {
@@ -15,6 +15,10 @@ body {
 }
 
 /* Menu */
+
+.navbar {
+    font-family: "Open Sans", "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+}
 
 .navbar .brand {
     text-shadow: none;
@@ -243,7 +247,9 @@ a:hover {
 /* Misc */
 
 h1 {
+    font-family: "Open Sans", "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
     font-size: 2em;
+    color: #666;
 }
 
 h2 {
@@ -348,6 +354,10 @@ hr {
     padding-left: 10px;
 }
 
+.pad-left-20 {
+    margin-left: 20px;
+}
+
 .height-400 {
     max-height: 420px;
     margin-bottom: 15px;
@@ -358,11 +368,15 @@ hr {
 }
 
 .height-300 {
-    height: 300px;
+    max-height: 300px;
+}
+
+.height-250 {
+    max-height: 250px;
 }
 
 .height-200 {
-    height: 200px;
+    max-height: 200px;
 }
 
 .height-100 {

@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Volkorn', serif;
+    font-size: 23px;
+    line-height: 1.2;
+    color: #333;
 }
 
 .container {
@@ -12,12 +15,15 @@ body {
 
 .breadcrumbs {
     padding-top: 5px;
+    font-size: 0.75em;
+    
 }
 
 /* Menu */
 
 .navbar {
     font-family: "Open Sans", "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+    font-size: 0.8em;
 }
 
 .navbar .brand {
@@ -37,6 +43,7 @@ body {
 
 .nav a {
     text-decoration: none;
+    font-weight: normal;
 }
 
 .navbar {
@@ -161,12 +168,14 @@ a:hover {
 
 .title {
     text-align: center;
-    font-size: 1em;
-    line-height: 1.1em;
+    font-size: 1.5em;
+    line-height: 1em;
     font-weight: normal;
     color: white;
     padding: 5px;
+    margin: 10px;
 }
+
 
 .project-title {
     font-size: 1.2em;
@@ -182,7 +191,7 @@ a:hover {
 /* Footer */
 
 #footer {
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 #footer a {
@@ -192,6 +201,8 @@ a:hover {
 
 #license {
     margin-top: 4px;
+    font-size: 0.7em;
+    font-weight: 100;
 }
 
 /* GitHub ribbon */
@@ -235,27 +246,22 @@ a:hover {
     }
 }
 
-/* Front Page */
-
-.title {
-    text-align: center;
-    font-size: 2em;
-    line-height: 1em;
-    font-weight: normal;
-}
-
 /* Misc */
 
 h1 {
     font-family: "Open Sans", "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
-    font-size: 2em;
+    font-size: 1.3em;
     color: #666;
+    margin: 20px 0px 10px 0px;
+}
+
+h1.headline {
+    margin: 15px 0px 0px 0px;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: normal;
-    margin: 20px 0px 0px 0px;
+    font-size: 1.2em;
+    margin: 10px 0px;
 }
 
 h2 a {
@@ -283,6 +289,10 @@ hr {
 
 .indent {
     margin-left: 40px;
+}
+
+li {
+    line-height: 1.2;
 }
 
 .spacing li {
@@ -429,4 +439,8 @@ pre {
     padding: 5px;
     background-color: #990011;
     font-weight: normal;
+}
+
+.spacing {
+    margin: 50px 0px;
 }

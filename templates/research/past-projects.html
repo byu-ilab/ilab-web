@@ -1,9 +1,37 @@
-	<h2><a href="research/wireless-networks">Wireless Networks</a></h2>
-	<p>Modeling and engineering of wireless networks so that the
-	  freedom of mobility also comes with high performance and
-	  fairness.</p>
+{% extends "base.html" %}
 
-	<h2><a href="research/dash">Streaming Video</a></h2>
-	<p>Software and algorithms to improve the performance of
-	  streaming video over the Internet, particularly when
-	  connection quality is highly variable.</p>
+{% block page %}
+
+<div class="container breadcrumbs">
+  <p>» Research » <a href="/research/past-projects">Past Projects</a></p>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Past Projects</h1>
+
+      <h2><a href={{ url_for("show",directory="research",page="wifu") }}>WiFu</a></h2>
+      <p>An open source software toolkit that allows researchers and
+	developers to create transport protocols in user space, rather
+	than in the Linux Kernel. This is helps us to be able to
+	rapidly prototype new transport protocols and to conduct
+	realistic experimental evaluations on these protocols, rather
+	than relying on simulations.</p>
+
+      <h2><a href={{ url_for("show",directory="research",page="wireless-modeling") }}>Wireless Network Modeling and Mapping</a></h2>
+      <p>Mathematical representations of contention and interference
+      among nodes. This enables us to develop optimal rate control
+      algorithms and also to detect intrusive devices that disrupt
+      communication.</p>
+
+      <h2><a href="/research/streaming-video">Streaming Video</a></h2>
+      <p>Software and algorithms to improve the performance of
+	streaming video over the Internet, particularly when
+	connection quality is highly variable.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

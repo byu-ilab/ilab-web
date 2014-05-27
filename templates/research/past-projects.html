@@ -3,7 +3,7 @@
 {% block page %}
 
 <div class="container breadcrumbs">
-  <p>» Research » <a href="/research/past-projects">Past Projects</a></p>
+  <p>&raquo; Research &raquo; <a href="/research/past-projects">Past Projects</a></p>
 </div>
 
 <div class="container">
@@ -25,7 +25,7 @@
       algorithms and also to detect intrusive devices that disrupt
       communication.</p>
 
-      <h2><a href="/research/streaming-video">Streaming Video</a></h2>
+      <h2><a href={{ url_for("show",directory="research",page="dynamic-adaptive-streaming-over-http") }}>Dynamic Adaptive Streaming over HTTP</a></h2>
       <p>Software and algorithms to improve the performance of
 	streaming video over the Internet, particularly when
 	connection quality is highly variable.</p>

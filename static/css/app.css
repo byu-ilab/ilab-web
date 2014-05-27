@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Volkorn', serif;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 1.2;
     color: #333;
 }
@@ -33,11 +33,13 @@ body {
 .header a {
     font-weight: normal;
     color: #333;
+    border-bottom: none;
 }
 
 .header a:hover {
     color: #333;
     text-decoration: none;
+    border-bottom: none;
 }
 
 /* Menu */
@@ -76,6 +78,11 @@ body {
 
 .nav a {
     text-decoration: none;
+    border-bottom: none;
+}
+
+.nav a:hover {
+    border-bottom: none;
 }
 
 .navbar .brand {
@@ -155,10 +162,14 @@ a {
     color: #6DA0C8;
     font-weight: 600;
     text-decoration: none;
+    border-bottom: 1px solid #6DA0C8;
 }
 
 a:hover {
     color: #6DA0C8;
+    color: #990011;
+    text-decoration: none;
+    border-bottom: 1px solid #990011;
 }
 
 /* Banner */
@@ -266,7 +277,7 @@ a:hover {
 
 h1 {
     font-family: 'Lato';
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #666;
     margin: 10px 0px 10px 0px;
 }
@@ -276,8 +287,8 @@ h1.headline {
 }
 
 h2 {
-    font-size: 1.2em;
-    margin: 10px 0px;
+    font-size: 1em;
+    margin: 10px 0px 0px 0px;
 }
 
 h2 a {
@@ -461,6 +472,10 @@ pre {
 
 .spacing {
     margin: 50px 0px;
+}
+
+.smaller {
+    font-size: 0.8em;
 }
 
 /* Larger Screens */

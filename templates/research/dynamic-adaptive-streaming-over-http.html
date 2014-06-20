@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container breadcrumbs">
+  <p>&raquo; Research &raquo; <a href="/research/past-projects">Past Projects</a> &raquo; <a href="/research/streaming-video">Streaming Video</a></p>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Dynamic Adaptive Streaming over HTTP</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span5">
+      <p>Video streaming on the Internet is increasingly using
+	Dynamic Adaptive Streaming over HTTP (DASH), which allows a
+	client to dynamically adjust its video quality by choosing the
+	appropriate quality level for each segment based on the
+	current download rate. It is currently used for
+	Video-on-Demand and live streaming in software developed by
+	Move Networks, Apple, Netflix, Microsoft, and Adobe.  However,
+	some research has shown that DASH streaming software does not
+	converge quickly to an appropriate video level and may be
+	unstable or unfair in its use of bandwidth.</p>
+
+      <p>In this project we are developing software and algorithms
+	to improve the performance of streaming video over the
+	Internet. We have developed code for OMNET++ that enables the
+	simulator to interact with the decision engine of a streaming
+	video player. Separately, we have used a combination of
+	analysis, dynamic programming and simulation to investigate
+	impact of Scalable Video Coding (SVC) on the client’s quality
+	selection policy.</p>
+    </div>
+    <div class="offset1 span6">
+      <img src="/static/img/dash-blocks.png"></img>
+      <p class="caption">A DASH with SVC client must decide
+	  whether to download for the current segment or for a future
+	  segment.</p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12">
+      <h2>Papers</h2>
+
+      <ul>
+	<li>Travis Andelin, Vasu Chetty, Devon Harbaugh, Sean
+	  Warnick, and Daniel Zappala. 2012. "Quality Selection for
+	  Dynamic Adaptive Streaming over HTTP with Scalable Video
+	  Coding." In Proceedings of the 3rd Conference on Multimedia Systems
+	  &#8211; MMSys '12, 149. New York, New York, USA: ACM
+	  Press. <a href="http://dx.doi.org/10.1145/2155555.2155580">doi:http://dx.doi.org/10.1145/2155555.2155580</a></li>
+      </ul>
+
+      <h2>Sponsors</h2>
+
+      <p>This project is supported by a gift from Move Networks.</p>
+
+      <a href="http://movenetworks.com/"><img src="/static/img/move-logo.png"></a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

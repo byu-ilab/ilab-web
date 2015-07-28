@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container breadcrumbs">
+  <p>&raquo; Research &raquo; <a href="/research/android-certs">Android Certs</a></p>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Android Certs</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="container ">
+  <div class="row-fluid">
+    <div class="span5">
+
+      <p>The Internet Research lab is conducting a study on man-in-the-middle
+	attacks. To do this, our Android application will
+	collect some basic information when your phone makes a secure
+	connection to a website. This includes:
+      </p>
+
+	<ul>
+	  <li>the website's certificate (which is public information),</li>
+	  <li>what city you are in, and</li>
+	  <li>the IP address of your phone at the time of connection.</li>
+	</ul>
+
+      <p>We will use this information to determine if you have been given
+	a valid certificate. If the certificate is not valid, we will warn
+	you that you are likely being attacked and your traffic is visible
+	to the attacker. If this occurs, you should be careful not to
+	share personal information, such as your credit card number,
+	with any sites.</p>
+
+      <p>We will not release your IP address or any other personally
+      identifiable information to any party.</p>
+
+      <p>For details and questions, please contact Dr. Daniel Zappala
+	at zappala@byu.edu</p>
+      
+  </div>
+</div>
+
+{% endblock %}

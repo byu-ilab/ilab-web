@@ -2,41 +2,38 @@
 
 {% block page %}
 
-<div class="banner">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12">
-	<h1 class="title">We find ways to make the Internet better</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="white">
   <div class="container">
     <div class="row-fluid">
       <div class="span7">
-	<h1 class="headline"><a href={{ url_for("show",directory="research",page="web-security") }}>Web Security</a></h1>
-	<p>Improving the security of authentication on the web, with a focus on
-	usability.
-	  </p>
+	<p>
+	  Our lab conducts research that encompasses networking, security, and usability. Broadly
+	  speaking, we are interested in making the Internet work better.
+	</p>
+	<p>Current projects include:</p>
 
-	<h1 class="headline"><a href={{ url_for("show",directory="research",page="sentiment-analysis") }}>Sentiment Analysis</a></h1>
-	<p>Helping to understand political and
-	  social change in the Middle East by automatically learning
-	  the sentiment of political tweets in Farsi.</p>
+	<h1 class="headline"><a href={{ url_for("show",directory="research",page="trustbase") }}>TrustBase</a></h1>
+	<p>An architecture for certificate authentication that secures existing applications, strengthens the CA system, and
+	  provides simple deployment of improved authentication systems.
+	</p>
+	
+	<h1 class="headline"><a href={{ url_for("show",directory="research",page="tls-proxies") }}>TLS Proxies</a></h1>
+	<p>Measuring the prevalence and nature of TLS proxies and understanding user attitudes and preferences toward
+	  inspection of their encrypted traffic.
+	</p>
 
-	<h1 class="headline"><a href={{ url_for("show",directory="research",page="internet-measurements") }}>Internet
-	Measurements</a></h1>
-	<p>Measuring the Internet to provide insight into how people use
-	  the network for a variety of purposes, both good and bad.</p>
+	<h1 class="headline"><a href={{ url_for("show",directory="research",page="cloud-storage") }}>Cloud Storage</a></h1>
+	<p>Understanding how user preferences and behavior when using cloud storage services.</p>
 
+	<h1 class="headline"><a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam
+	  Measurements</a></h1>
+	<p>Measuring the Steam network to provide insight into how people play video games.</p>
 
-	<h1 class="headline"><a href={{ url_for("show",directory="research",page="personal-cloud") }}>Personal Cloud
-	Computing</a></h1>
-	<p>Designing a cloud for your home, connecting all your devices and
-	  providing seamless access to all your
-	  data.</p>
+	<h1 class="headline"><a href={{ url_for("show",directory="research",page="content-based-security") }}>Content-Based
+	  Security</a></h1>
+	<p>Supplementing the web’s existing connection-based and
+	  server-based security models with a new approach: content-
+	  based security.</p>
 
       </div>
       <div class="span5 top10">

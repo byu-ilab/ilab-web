@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container breadcrumbs">
+  <p>&raquo; Research &raquo; <a href="/research/steam-measurements">Steam Measurements</a></p>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Steam Measurements</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="container ">
+  <div class="row-fluid">
+    <div class="span6">
+
+      <p>It is estimated that nearly 60 percent of Americans play
+	video games, bringing in annual revenue of over $25 billion
+	for PC gaming alone.  There is a notable body of academic work
+	focused on characterizing the gamers that make up this market,
+	examining factors such as age, gender, and economic
+	status. That notwithstanding, the sheer size of this
+	demographic has made comprehensive study of gamer behavior a
+	difficult obstacle to tackle.</p>
+
+      <p>
+	To better understand gamer behavior, we have conducted a
+	comprehensive measurement study of the Steam gaming network,
+	one of the largest gaming networks in the world. Unlike
+	previous studies that have relied on sampling techniques, our
+	study is the first complete examination of a major gaming
+	network, measuring all 108.7 million user accounts and 384.3
+	million owned games. We examine gamer behavior across the
+	dimensions of social connectivity, playtime, game ownership,
+	genre affinity, and monetary expenditure.
+      </p>
+
+      <p>
+	As a whole, gamer behavior is highly diverse and characterized
+	by heavy-tailed distributions. Most players exhibit modest
+	behaviors in terms of the number of minutes played per day and
+	the amount of money spent on games, though there is a long
+	tail with outliers, such as gamers who maximize achievements
+	or playtime stats, or gamers who collect games they don’t
+	play. We find some strong correlations that show that players
+	tend to befriend those who are similar in terms of
+	popularity, playtime, money spent, and games owned. There is a
+	moderate correlation between how much a game is played and how
+	many achievements it offers. We collect a second snapshot of
+	the Steam network and find that our findings are robust across
+	both measurements. We relate these findings to
+	other relevant studies, including gamer stereotypes, game
+	addiction, and social networking.
+      </p>
+
+    </div>
+    <div class="offset1 span4">
+      <img class="height-250" src="/static/img/steam-friend-graph-sampled.png">
+      <p class="caption">Heat map and clustering of Steam users and friendships</p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12">
+      <h2>Papers</h2>
+      <h2>Code</h2>
+      <h2>Data</h2>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

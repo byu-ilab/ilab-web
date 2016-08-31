@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Volkorn', serif;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.2;
     color: #333;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .header a {
-    font-weight: normal;
+    font-weight: 400;
     color: #333;
     border-bottom: none;
 }
@@ -45,24 +45,24 @@ body {
 /* Menu */
 
 .nav-collapse, .nav-collapse.collapse {
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .navbar {
     font-family: 'Lato';
     letter-spacing: 0.10em;
-    font-size: 0.7em;
+    font-size: 0.85em;
+    line-height: 0.6em;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     background-color: #394755;
-    padding: 5px;
 }
 
 .brand {
     font-family: 'Lato';
     text-shadow: none;
-    font-size: 0.8em;
     color: black;
+    font-size: 1.7em;
     letter-spacing: 0.15em;
     vertical-align: middle;
     margin-bottom: 0px;
@@ -98,6 +98,7 @@ body {
     box-shadow: none;
     border-radius: 0;
     padding: 0px;
+    min-height: 35px;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active a:hover, .navbar .nav > .active > a:focus {
@@ -153,6 +154,11 @@ body {
     height: 50px;
 }
 
+/* Body */
+
+p {
+}
+
 
 /* Links */
 
@@ -194,7 +200,6 @@ a:hover {
 }
 
 .text {
-    font-size: 1.2em;
     color: #333;
 }
 
@@ -519,10 +524,10 @@ pre {
 	display: none;
     }
     .brand {
-	font-size: 1.4em;
+	font-size: 1.5em;
     }
     .affiliation {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	text-align: right;
 	margin-top: 25px;
     }

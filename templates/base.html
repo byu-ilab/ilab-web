@@ -50,7 +50,6 @@
 		      <li><a href={{ url_for("show",directory="research",page="past-projects") }}>Past Projects</a></li>
 		    </ul>
 		  </li>
-		  <li id="menu-software" {% if active == "software" %}class="active"{% endif %}><a href={{url_for("show",directory="software")}} >Software</a></li>
 		  <li id="menu-publications" {% if active == "publications" %}class="active"{% endif %}><a href={{url_for("show",directory="publications")}} >Publications</a></li>
 		  <li id="menu-people" {% if active == "people" %}class="active"{% endif %}><a href={{url_for("show",directory="people")}} >People</a></li>
 		  <li id="menu-github"><a href="https://github.com/byu-ilab">GitHub <i class="icon-share-alt icon-white"></i></a></li>

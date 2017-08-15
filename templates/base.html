@@ -2,61 +2,58 @@
 <html lang="en">
   <head>
     <title>Internet Research Lab</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="kX4eJq9K4qIXdNVmpLmP5JURo432sF4DN-ylHZ2n-xM" />
     <link rel="shortcut icon" href="/static/img/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="/static/css/app.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   </head>
   <body>
     {% block header %}
-    <div class="container header">
-      <div class="row-fluid">
-	<div class="span7 brand">
+    <div class="container-fluid header">
+      <div class="row">
+	<div class="col-md-7 brand">
 	  <img class="logo" src="/static/img/gravitar.png">
 	  <a href="/">Internet Research Lab</a>
 	</div>
-	<div class="span5 affiliation">
-	  <a href="http://www.byu.edu">BYU</a> | <a href="http://cs.byu.edu">Computer Science</a>
+	<div class="col-md-5 affiliation">
+	  <a href="https://www.byu.edu">BYU</a> | <a href="https://cs.byu.edu">Computer Science</a>
 	</div>
       </div>
     </div>
-    <div class="navbar">
-	<div class="container">
-	<div class="navbar-inner">
-	  <div class="row-fluid">
-	    <div class="span12">
-	      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	      </a>
-	      <span class="brand">Navigation</span>
-	      <div class="nav-collapse collapse">
-		<ul class="nav">
-		  <li id="menu-home" {% if active == "index" %}class="active"{% endif %}><a href={{url_for("index")}}>Home</a></li>
-		  <li class="dropdown" id="menu-research" {% if active == "research" %}class="research"{% endif %}><a class="dropdown-toggle" data-toggle="dropdown" href="#">Research <b class="caret"></b></a>
-		    <ul class="dropdown-menu">
-		      <li><a href={{ url_for("show",directory="research",page="trustbase") }}>TrustBase</a></li>
-		      <li><a href={{ url_for("show",directory="research",page="tls-proxies") }}>TLS Proxies</a></li>
-		      <li><a href={{ url_for("show",directory="research",page="cloud-storage") }}>Cloud Storage</a></li>
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Navigation</a>
+	</div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  <ul class="nav navbar-nav">	    
+	    <li id="menu-home" {% if active == "index" %}class="active"{% endif %}><a href={{url_for("index")}}>Home</a></li>
+	    <li href="#" class="dropdown" id="menu-research" {% if active == "research" %}class="research"{% endif %}><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <b class="caret"></b></a>
+	      <ul class="dropdown-menu">
+		<li><a href={{ url_for("show",directory="research",page="trustbase") }}>TrustBase</a></li>
+		<li><a href={{ url_for("show",directory="research",page="alice") }}>Alice</a></li>
+		<li><a href={{ url_for("show",directory="research",page="tls-proxies") }}>TLS Proxies</a></li>
+		<li><a href={{ url_for("show",directory="research",page="cloud-storage") }}>Cloud Storage</a></li>
 
-		      <li><a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam Measurements</a></li>
-		      <li><a href={{ url_for("show",directory="research",page="content-based-security") }}>Content-Based Security</a></li>
-		      <li><a href={{ url_for("show",directory="research",page="past-projects") }}>Past Projects</a></li>
-		    </ul>
-		  </li>
-		  <li id="menu-publications" {% if active == "publications" %}class="active"{% endif %}><a href={{url_for("show",directory="publications")}} >Publications</a></li>
-		  <li id="menu-people" {% if active == "people" %}class="active"{% endif %}><a href={{url_for("show",directory="people")}} >People</a></li>
-		  <li id="menu-github"><a href="https://github.com/byu-ilab">GitHub <i class="icon-share-alt icon-white"></i></a></li>
-		</ul>
-	      </div>
-	    </div>
-	  </div>
+		<li><a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam Measurements</a></li>
+		<li><a href={{ url_for("show",directory="research",page="content-based-security") }}>Content-Based Security</a></li>
+		<li><a href={{ url_for("show",directory="research",page="past-projects") }}>Past Projects</a></li>
+	      </ul>
+	    </li>
+	    <li id="menu-papers" {% if active == "papers" %}class="active"{% endif %}><a href={{url_for("show",directory="papers")}} >Papers</a></li>
+	    <li id="menu-people" {% if active == "people" %}class="active"{% endif %}><a href={{url_for("show",directory="people")}} >People</a></li>
+	    <li id="menu-github"><a href="https://github.com/byu-ilab">GitHub <i class="icon-share-alt icon-white"></i></a></li>
+	  </ul>
 	</div>
       </div>
     </div>
@@ -68,12 +65,12 @@
 
     {% block footer %}
     <div id="footer" class="grays">
-      <div class="container">
-	<div class="row-fluid">
-	  <div class="span12 padtop10">
+      <div class="container-fluid">
+	<div class="row">
+	  <div class="col-md-12 padtop10">
 	    <div id="license" class="left">
-	      <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> 
-	      <p>&copy 2013 Internet Research Lab</p>
+	      <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> 
+	      <p>&copy 2017 Internet Research Lab</p>
 	    </div>
 	  </div>
 	</div>
@@ -81,8 +78,9 @@
     </div>
 
     {% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script src="/static/js/bootstrap.min.js"></script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

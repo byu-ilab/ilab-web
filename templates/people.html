@@ -2,28 +2,23 @@
 
 {% block page %}
 
-<div class="container">
-  <div class="row-fluid">
-    <h1>People</h1>
-    <h2>Daniel Zappala, Director</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>People</h1>
+      <h2 class="spacer">Daniel Zappala, Director</h2>
+    </div>
   </div>
-  <div class="row-fluid">
-    <div class="span2">
+  <div class="row">
+    <div class="col-md-2">
       <img class="border max-width-150" src="/static/img/daniel-zappala.jpg">
     </div>
-    <div class="span10">
+    <div class="col-md-10">
       <p>Daniel Zappala is an Associate Professor
 	of <a href="http://cs.byu.edu">Computer Science</a> at
-	<a href="http://byu.edu">Brigham Young University</a>.
+	<a href="http://byu.edu">Brigham Young University</a> and
 	Director of the <a href="http://ilab.cs.byu.edu">Internet
-	  Research Lab</a> and the <a href="http://osl.byu.edu">BYU Open
-	  Source Lab</a>.</p>
-
-      <p><a href="//plus.google.com/114449822521576560110?prsrc=3"
-	    rel="publisher" target="_top" style="text-decoration:none;">
-	  <img src="//ssl.gstatic.com/images/icons/gplus-32.png"
-	       alt="Google+" style="border:0;width:32px;height:32px;margin-right:5px;"/>
-	</a>Follow me on Google+ to get updates and discuss our work.</p>
+	  Research Lab</a>.</p>
 
       <p><a href="http://ilab.cs.byu.edu/zappala">Home Page</a>
 	<br>daniel.zappala@gmail.com
@@ -34,72 +29,92 @@
     </div>
   </div>
 
-  <div class="row-fluid">
+  <div class="row">
     <h2>Elham Vaziripour, Ph.D. student</h2>
   </div>
-  <div class="row-fluid">
-    <div class="span2">
+  <div class="row">
+    <div class="col-md-2">
       <img class="border max-width-150" src="/static/img/elham-vaziripour.png">
     </div>
-    <div class="span10">
+    <div class="col-md-10">
       <p>Elham is conducting research
-	on <a href={{ url_for("show",directory="research",page="sentiment-analysis") }}>sentiment
-	  analysis</a> of political tweets and
-	<a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam
+	on <a href={{ url_for("show",directory="research",page="alice") }}>Alice</a>, which
+	is investigating how to improve the usability of the authentication ceremony in secure messaging applications.
+      She previously worked on 
+      <a href={{ url_for("show",directory="research",page="sentiment-analysis") }}>sentiment analysis</a>
+      of Farsi tweets and
+      <a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam
 	measurements</a>.</p>
-
+      
       <p>
 	elham.vaziripour@gmail.com
-	<br>2240 TMCB, Brigham Young University, 84062
       </p>
 
     </div>
   </div>
 
-  <div class="row-fluid">
+  <div class="row">
     <h2>Mark O'Neill, Ph.D. student</h2>
   </div>
-  <div class="row-fluid">
-    <div class="span2">
+  <div class="row">
+    <div class="col-md-2">
       <img class="border max-width-150" src="/static/img/placeholder.jpg">
     </div>
-    <div class="span10">
-      <p>Mark is conducting research
+    <div class="col-md-10">
+      <p>Mark is conducting research on the  <a href={{ url_for("show",directory="research",page="trustbase") }}>TrustBase</a> project.
+        He previously worked
 	on <a href={{ url_for("show",directory="research",page="tls-proxies") }}>TLS Proxies</a> and
 	<a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam
 	measurements</a>.</p>
 
+
       <p>
 	phoenixteam1@gmail.com
-	<br>2240 TMCB, Brigham Young University, 84062
       </p>
 
     </div>
   </div>
 
-  <div class="row-fluid">
-    <h2>Justin Wu, M.S. student</h2>
+  <div class="row">
+    <h2>Justin Wu, Ph.D. student</h2>
   </div>
-  <div class="row-fluid">
-    <div class="span2">
+
+  <div class="row">
+    <div class="col-md-2">
       <!--<img class="border max-width-150" src="/static/img/justin-wu.png">-->
       <img class="border max-width-150" src="/static/img/placeholder.jpg">
     </div>
-    <div class="span10">
-      <p>Justin is conducting research
+    <div class="col-md-10">
+      <p>Justin is conducting research on grassroots adoption of encryption.
+	He previously worked on
 	on <a href={{ url_for("show",directory="research",page="cloud-storage") }}>Cloud Storage
 	</a> and 
 	<a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam
 	measurements</a>.</p>
 
       <p>hiyono@gmail.com
-      <br>2240 TMCB, Brigham Young University, 84062
       </p>
     </div>
   </div>
 
-  <div class="row-fluid">
-    <div class="span12">
+  <div class="row">
+    <h2>Scott Heidrbrink, M.S. student</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2">
+      <img class="border max-width-150" src="/static/img/placeholder.jpg">
+    </div>
+    <div class="col-md-10">
+      <p>Scott is conducting research on the  <a href={{ url_for("show",directory="research",page="trustbase") }}>TrustBase</a> project.</p>
+
+      <p>scott.heidbrink@gmail.com
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
       <h2>Collaboration</h2>
       <p>We work closely with the <a href="http://isrl.byu.edu">Internet Security Research Lab</a> and <a href="http://idealabs.byu.edu/">IDeA Labs</a>.</p>
 

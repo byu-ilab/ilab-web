@@ -2,21 +2,21 @@
 
 {% block page %}
 
-<div class="container breadcrumbs">
+<div class="container-fluid breadcrumbs">
   <p>&raquo; Research &raquo; <a href="/research/cloud-storage">Cloud Storage</a></p>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row-fluid">
-    <div class="span12">
+    <div class="col-md-12">
       <h1>Cloud Storage</h1>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row-fluid">
-    <div class="span6">
+    <div class="col-md-6">
       <p>We are interested in studying user perceptions and behavior
 	with respect to cloud storage services. In particular, we are
 	interested in behaviors such as which services are used, what
@@ -27,11 +27,10 @@
       </p>
 
       <p>We are currently
-	conducting <a href={{
-	url_for("show",directory="cloud",page="") }}>interviews</a>
+	conducting interviews
 	with people in the Provo area.</p>
     </div>
-    <div class="offset1 span4">
+    <div class="col-md-offset-1 col-md-4">
       <img class="height-300" src="/static/img/cloud-vision.png">
       <p class="caption">Vision of the cloud ecosystem</p>
     </div>

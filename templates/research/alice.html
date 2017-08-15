@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container-fluid breadcrumbs">
+  <p>&raquo; Research &raquo; <a href="/research/alice">Alice</a></p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Alice</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-7">
+      <p><i>Improving the usability of the authentication ceremony in secure messaging applications</i></p>
+      
+      <p>Recent disclosures of government surveillance and fears over
+      cybersecurity attacks have increased public interest in secure
+      and private communication. As a result, numerous secure
+      messaging applications have been developed, including Signal,
+      WhatsApp, and Viber, which provide end-to-end encryption of
+	personal messages.</p>
+
+      <p>Most popular secure messaging applications are usable because
+      they hide many of the details of how encryption is
+      provided. However, the strength of the security properties of
+      these applications rests on the <i>authentication ceremony</i>,
+      in which users validate the encryption keys being used.
+      Unfortunately, recent studies show that most users do not know
+      how to successfully complete this ceremony and are thus
+      vulnerable to potential attacks. Any user who does not execute
+      the authentication ceremony for a particular conversation is
+      essentially trusting the application's servers to correctly
+      distribute the encryption keys. This leaves users vulnerable to
+	threats that can intercept communications.</p>
+
+      <p>We are studying methods to improve the usability of the
+      authentication ceremony, so that it is easy for users to locate
+	and complete the ceremony.</p>
+    </div>
+    <div class="col-md-offset-1 col-md-4">
+      <img class="width-250" src="/static/img/whatsapp-verification.png">
+      <p class="caption">Authentication ceremony in WhatsApp</p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-md-12">
+      
+      <h2>Survey</h2>
+      <p>We are currently conducting a <a href={{url_for("show",directory="research", page="telegram-survey")}}>survey of Telegram users</a>, with a focus on Iranians.<p>
+	
+      <h2>Papers</h2>
+
+      <ul>
+	<li>Elham Vaziripour, Justin Wu, Mark O’Neill, Ray Clinton, Jordan Whitehead,
+	  Scott Heidbrink, Kent Seamons, Daniel Zappala, Is that you, Alice? A Usability Study of the Authentication
+	  Ceremony of Secure Messaging Applications, USENIX Symposium on Usable Privacy and Security (SOUPS), July 2017.
+	  <a href={{url_for("show",directory="paper",page="alice")}}/papers/alice">Paper</a>
+	</li>
+      </ul>
+
+      
+      <h2>Sponsors</h2>
+
+      <p>This project is supported by the National Science
+	Foundation under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1528022&HistoricalAwards=false">Grant No. 1528022</a></p>
+
+      <p>Any opinions, findings, and conclusions or recommendations
+	expressed in this work are those of the author(s) and do not
+	necessarily reflect the views of the sponsors.</p>
+
+      <a href="http://www.nsf.org/"><img class="height-100" src="/static/img/nsf.jpg"></a>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

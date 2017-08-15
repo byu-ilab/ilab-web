@@ -2,31 +2,52 @@
 
 {% block page %}
 
-<div class="container breadcrumbs">
+<div class="container-fluid breadcrumbs">
   <p>&raquo; Research &raquo; <a href="/research/content-based-security">Content-Based Security</a></p>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row-fluid">
-    <div class="span12">
+    <div class="col-md-12">
       <h1>Content-Based Security</h1>
     </div>
   </div>
 </div>
 
 
-<div class="container ">
+<div class="container-fluid ">
   <div class="row-fluid">
-    <div class="span6">
-
-
+    <div class="col-md-7">
+      The World Wide Web has become the most common platform for
+      building applications and delivering content. Yet despite years
+      of research, the web continues to face severe security
+      challenges related to data integrity and confidentiality. Rather
+      than continuing the exploit-and-patch cycle, we propose
+      addressing these challenges at an architectural level, by
+      supplementing the web’s existing connection-based and
+      server-based security models with a new approach: content-based
+      security. With this approach, content is directly signed and
+      encrypted at rest, enabling it to be delivered via any path and
+      then validated by the browser. We are exploring how this new
+      architectural approach can be applied to the web and analyzing its
+      security benefits.
     </div>
-    <div class="offset1 span4">
+    <div class="col-offset-1 col-md-4">
+      <img class="height-200" src="/static/img/cbs-web.png">
+      <p class="caption">Content-based security for the web</p>
     </div>
   </div>
   <div class="row-fluid">
-    <div class="span12">
+    <div class="col-md-12">
       <h2>Papers</h2>
+
+      <ul>
+	<li>Alexander Afanasyev, J. Alex Halderman, Scott Ruoti, Kent Seamons, Yingdi Yu, Daniel Zappala, and Lixia Zhang.
+	  Content-Based Security for the Web, New Security Paradigms Workshop (NSPW), September, 2016. 
+	  <a href="/static/papers/content-based-security-nspw-2016.pdf">Paper</a>
+	</li>
+      </ul>
+
     </div>
   </div>
 </div>

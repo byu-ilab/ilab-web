@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Papers</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="spacing20">
+
+	<li>Mark O'Neill, Scott Heidbrink, Scott Ruoti, Jordan
+	  Whitehead, Dan Bunker, Luke Dickinson, Travis Hendershot,
+	  Joshua Reynolds, Kent Seamons, and Daniel Zappala,
+	  TrustBase: An Architecture to Repair and Strengthen
+	  Certificate-based Authentication, USENIX Security, August
+	  2017</li>
+
+	<li>Elham Vaziripour, Justin Wu, Mark O'Neill, Ray Clinton,
+	  Jordan Whitehead, Scott Heidbrink, Kent Seamons, Daniel
+	  Zappala, <a href={{url_for("show",directory="paper",page="alice")}}>Is that you, Alice? A Usability Study of the Authentication
+	  Ceremony of Secure Messaging Applications</a>, USENIX Symposium on Usable Privacy and Security (SOUPS), July 2017</li>
+
+	<li>Scott Ruoti, Tyler Monson, Justin Wu, Daniel Zappala, and
+	  Kent Seamons, Brigham Young University, Weighing Context and
+	  Trade-offs: How Suburban Adults Selected Their Online
+	  Security Posture, USENIX Symposium on Usable Privacy and
+	  Security (SOUPS), July 2017</li>
+
+	<li>Mark O'Neill, Scott Ruoti, Kent Seamons, Daniel Zappala,
+	TLS Proxies: Friend or Foe?, ACM Internet Measurement
+	  Conference, November, 2016.
+	  <a href="/static/papers/tls-proxies-imc-2016.pdf">paper</a>
+	  <a href="https://doi.org/10.1145/2987443.2987488">doi</a>
+	</li>
+
+	<li>Mark O'Neill, Elham Vaziripour, Justin Wu, Daniel Zappala,
+	Condensing Steam: Distilling the Diversity of Gamer Behavior,
+	  ACM Internet Measurement Conference, November, 2016.
+	  <a href="/static/papers/steam-imc-2016.pdf">paper</a>
+	  <a href="https://doi.org/10.1145/2987443.2987489">doi</a>
+	</li>
+
+	<li>Alexander Afanasyev, J. Alex Halderman, Scott Ruoti, Kent Seamons,
+	Yingdi Yu, Daniel Zappala, Lixia Zhang, Content-Based Security for
+	  the Web, New Security Paradigms Workshop (NSPW), September, 2016.
+	  <a href="/static/papers/content-based-security-nspw-2016.pdf">papers</a>
+	  <a href="https://doi.org/10.1145/3011883.3011890">doi</a>
+	</li>
+
+	<li>Elham Vaziripour, Mark O'Neill, Justin Wu, Scott
+	Heidbrink, Kent Seamons, and Daniel Zappala, Social
+	Authentication for End-to-End Encryption, Who Are You?!
+	  Adventures in Authentication Workshop, July 2016.
+	  <a href="/static/papers/social-authentication-way-2016.pdf">papers</a>
+	  <a href="https://www.usenix.org/conference/soups2016/workshop-program/way2016/presentation/vaziripour">USENIX</a>
+	</li>
+
+	<li>Scott Ruoti, Mark O'Neil, Daniel Zappala, Kent Seamons,
+	User Attitudes Toward the Inspection of Encrypted Traffic,
+	  Symposium on Usable Privacy and Security (SOUPS), July 2016.
+	  <a href="/static/papers/tls-proxies-user-attitudes-soups-2016.pdf">paper</a>
+	  <a href="https://www.usenix.org/conference/soups2016/technical-sessions/presentation/ruoti">USENIX</a>
+	</li>
+
+	<li>David Grimsman, Vasu Chetty, Nathan Scott Woodbury, Elham
+	Vaziripour, Sandip Roy, Daniel Zappala, Sean Warnick, A Case
+	Study of a Systematic Attack Design Method for Critical
+	Cyber-Physical Systems, American Control Conference (ACC),
+	  July 2016.
+	  <a href="/static/papers/case-study-acc-2016.pdf">paper</a>
+	  <a href="https://doi.org/10.1109/ACC.2016.7524931">doi</a>
+	</li>
+
+	<li>Scott Ruoti, Jeff Andersen, Scott Heidbrink, Mark O'Neill, Elham
+	Vaziripour, Justin Wu, Daniel Zappala, Kent Seamons, "We're on the
+	Same Page": A Usability Study of Secure Email Using Pairs of Novice
+	Users, ACM Conference on Human Factors in Computing Systems (CHI),
+	  May 2016. Honorable Mention Award.
+	  <a href="/static/papers/same-page-chi-2016.pdf">paper</a>
+	  <a href="https://doi.org/10.1145/2858036.2858400">doi</a>
+	</li>
+
+	<li>Elham Vaziripour, Christophe Giraud-Carrier, Daniel
+	Zappala, Analyzing the Political Sentiment of Tweets in Farsi,
+	International AAAI Conference on Web and Social Media (ICWSM),
+	  May 2016.
+	  <a href="/static/papers/tweets-farsi-icwsm-2016.pdf">paper</a>
+	  <a href="http://www.aaai.org/ocs/index.php/ICWSM/ICWSM16/paper/view/13089">AAAI</a>
+	</li>
+	
+	<li>Mark O'Neill, Scott Ruoti, Kent Seamons, and Daniel
+	Zappala, TLS Proxies: Friend or Foe?, 2014 ACM SIGSAC
+	Conference on Computer and Communications Security (CCS),
+	  October 2014, pages 1487--1489. (poster paper)
+	  <a href="/static/papers/tls-proxies-ccs-2014.pdf">paper</a>
+	  <a href="https://doi.org/10.1145/2660267.2662393">doi</a>
+	</li>
+
+	<li>Randy Buck, Rich Lee, Phil Lundrigan and Daniel Zappala,
+	WiFu: A Composable Toolkit for Experimental Wireless Transport
+	Protocols, IEEE International Conference on Mobile Ad Hoc and
+	  Sensor Systems (MASS), October 2012. <a href="/static/papers/wifu-mass-2012.pdf">paper</a>
+	  <a href="https://doi.org/10.1109/MASS.2012.6502529">doi</a>
+	</li>
+
+	<li>Travis Andelin, Vasu Chetty, Devon Harbaugh, Sean Warnick,
+	  and Daniel Zappala, Quality Selection for Dynamic Adaptive
+	  Streaming over HTTP with Scalable Video Coding, ACM
+	  Conference on Multimedia Systems (MMSys), February 2012
+	  pages 149 &#8211; 154.
+	  <a href="/static/papers/dash-mmsys-2012.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1145/2155555.2155580">doi</a>
+	</li>
+
+	<li>David Ripplinger, Sean Warnick, and Daniel Zappala,
+	  First-principles Modeling of Wireless Networks for Rate
+	  Control, IEEE Conference on Decision and Control (CDC),
+	  December 2011, pages 3794 &#8211; 3799
+	  <a href="/static/papers/first-principles-cdc-2011.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/CDC.2011.6161235">doi</a>
+	</li>
+
+	<li>Xingang Zhang, Randy Buck, and Daniel Zappala,
+	  Experimental Performance Evaluation of ATP in a Wireless
+	  Mesh Network, International Conference on Mobile Ad-Hoc and
+	  Sensor Systems (MASS), October 2011, pages 122 &#8211; 131.
+	  <a href="/static/papers/atp-mass-2011.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/MASS.2011.25">doi</a>
+	</li>
+
+	<li>Lei Wang, David Ripplinger, Anurag Rai, Sean Warnick, and
+	  Daniel Zappala, A Convex Optimization Approach to
+	  Decentralized Rate Control in Wireless Networks with Partial
+	  Interference, IEEE Conference on Decision and Control (CDC),
+	  December 2010, pages 639 &#8211; 646.
+	  <a href="/static/papers/convex-optimization-cdc-2010.pdf">papers</a>
+	  <a href="http://dx.doi.org/10.1109/CDC.2010.5717212">doi</a>
+	</li>
+
+	<li>Brian Sanderson and Daniel Zappala, Reducing Source Load
+	  in BitTorrent, International Conference on Computer
+	  Communications and Networks (ICCCN), August 2009, pages 1
+	  &#8211; 6.
+	  <a href="/static/papers/bittorrent-seed-load-icccn-2009.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/ICCCN.2009.5235228">doi</a>
+	</li>
+
+	<li>Daniel Scofield, Lei Wang, and Daniel Zappala, HxH: a
+	  Hop-by-hop Transport Protocol for Multi-hop Wireless
+	  Networks, Internatonal ICST Conference on Wireless Internet
+	  (WiCon), October 2008.
+	  <a href="/static/papers/hxh-wicon-2008.pdf">paper</a>
+	  <a href="http://eudl.eu/doi/10.4108/ICST.WICON2008.4806">doi</a>
+	</li>
+
+
+	<li>Jared Jardine and Daniel Zappala, A Hybrid Architecture
+	  for Massively Multiplayer Online Games, ACM SIGCOMM Workshop
+	  on Network and System Support for Games (NetGames), October
+	  2008, pages 60 &#8211; 65.
+	  <a href="/static/papers/hybrid-architecture-netgames-2008.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1145/1517494.1517507">doi</a>
+	</li>
+
+	<li>Manoj Pandey and Daniel Zappala, Hop-by-hop Multicast
+	  Transport for Mobile Ad Hoc Wireless Networks, IEEE
+	  International Conference on Mobile Ad Hoc and Sensor Systems
+	  (MASS), October 2008, pages 450 &#8211; 455.
+	  <a href="/static/papers/hcp-mass-2008.pdf"
+	  <a href="http://dx.doi.org/10.1109/MAHSS.2008.4660037">doi</a>
+	</li>
+
+	<li>Manoj Pandey and Daniel Zappala, Scalable Multicast
+	  Routing for Ad Hoc Networks, IEEE International Conference
+	  on Mobile Ad Hoc and Sensor Systems, October 2008, pages 559 &#8211;
+	  564.
+	  <a href="/static/papers/assm-locan-2008.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/MAHSS.2008.4660088">doi</a>
+	</li>
+
+	<li>Qiuyi Duan, Lei Wang, Charles D. Knutson, and Daniel
+	  Zappala, Autonomous and Intelligent Radio Switching for
+	  Heterogeneous Wireless Networks, IEEE International
+	  Conference on Mobile Ad Hoc and Sensor Systems (MASS),
+	  October 2008, pages 666 &#8211; 671.
+	  <a href="/static/papers/airs-mhwmn-2008.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/MAHSS.2008.4660107">doi</a>
+	</li>
+
+	<li>Qiuyi Duan, Lei Wang, Charles D. Knutson and Daniel
+	  Zappala, Link Quality Prediction for Wireless Devices
+	  with Multiple Radios, International Symposium
+	    on a World of Wireless, Mobile and Multimedia Networks (WoWMoM), June 2008, pages
+	  1 &#8211; 5.
+	  <a href="/static/papers/link-quality-prediction-wowmom-2008.pdf">papers</a>
+	  <a href="http://dx.doi.org/10.1109/WOWMOM.2008.4594869">doi</a>
+	</li>
+
+	<li>Manoj Pandey, Roger Pack, Lei Wang, Qiuyi Duan, and Daniel
+	  Zappala, To Repair or Not To Repair: Helping Ad-hoc Routing
+	  Protocols to Distinguish Mobility from Congestion, IEEE
+	  International Conference on Computer Communications
+	  (Infocom), May 2007, pages 2311 &#8211; 2315.
+	  <a href="/static/papers/mda-infocom-2007.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/INFCOM.2007.271">doi</a>
+	</li>
+
+	<li>Manoj Pandey, Daniel Delorey, Qiuyi Duan, Lei Wang,
+	  Charles Knutson, Daniel Zappala, and Ryan Woodings, RIA: An
+	  RF Interference Avoidance Algorithm for Heterogeneous
+	  Wireless Networks, IEEE Wireless Communications and
+	  Networking Conference (WCNC), March 2007, pages 4051 &#8211;
+	  4056.
+	  <a href="/static/papers/ria-wcnc-2007.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/WCNC.2007.740">doi</a>
+	</li>
+
+	<li>Manoj Pandey and Daniel Zappala, A Scenario-Based
+	  Performance Evaluation of Multicast Routing Protocols for Ad
+	  Hoc Networks, IEEE International Symposium on a World of
+	  Wireless Mobile and Multimedia Networks (WoWMoM), June 2005,
+	  pages 31 &#8211; 41.
+	  <a href="/static/papers/scenario-multicast-wowmom-2005.pdf">paper</a>
+	  <a href="http://dx.doi.org/10.1109/WOWMOM.2005.9">doi</a>
+	</li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

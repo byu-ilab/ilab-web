@@ -3,18 +3,22 @@
 {% block page %}
 
 <div class="white">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row-fluid">
-      <div class="span7">
+      <div class="col-md-7">
 	<p>
 	  Our lab conducts research that encompasses networking, security, and usability. Broadly
-	  speaking, we are interested in making the Internet work better.
+	  speaking, we are interested in making the Internet more secure, using technology that
+	  is easy for everyone to use.
 	</p>
 	<p>Current projects include:</p>
 
 	<h1 class="headline"><a href={{ url_for("show",directory="research",page="trustbase") }}>TrustBase</a></h1>
-	<p>An architecture for certificate authentication that secures existing applications, strengthens the CA system, and
-	  provides simple deployment of improved authentication systems.
+	<p>Converting certificate-based authentication into an
+	  operating system service.</p>
+
+	<h1 class="headline"><a href={{ url_for("show",directory="research",page="alice") }}>Alice</a></h1>
+	<p>Improving the usability of the authentication ceremony in secure messaging applications.
 	</p>
 	
 	<h1 class="headline"><a href={{ url_for("show",directory="research",page="tls-proxies") }}>TLS Proxies</a></h1>
@@ -23,37 +27,30 @@
 	</p>
 
 	<h1 class="headline"><a href={{ url_for("show",directory="research",page="cloud-storage") }}>Cloud Storage</a></h1>
-	<p>Understanding how user preferences and behavior when using cloud storage services.</p>
-
-	<h1 class="headline"><a href={{ url_for("show",directory="research",page="steam-measurements") }}>Steam
-	  Measurements</a></h1>
-	<p>Measuring the Steam network to provide insight into how people play video games.</p>
+	<p>Understanding user preferences and behavior when using cloud storage services.</p>
 
 	<h1 class="headline"><a href={{ url_for("show",directory="research",page="content-based-security") }}>Content-Based
 	  Security</a></h1>
-	<p>Supplementing the web’s existing connection-based and
-	  server-based security models with a new approach: content-
-	  based security.</p>
+	<p>Supplementing the web's existing connection-based and
+	  server-based security models with content-based security.</p>
 
       </div>
-      <div class="span5 top10">
-	<img class="height-550" src="/static/img/steam-friend-graph-sampled.png">
+      <div class="col-md-5">
+	<div class="light-blue">
+	  <h2>Funding</h2>
+	  <p>Our lab has been funded by the National Science
+	    Foundation, the Department of Homeland Security, Air Force
+	    Research Lab, Google, and the BYU College of Physical and
+	    Mathematical Sciences.</p>
+	</div>
+	<div class="light-gray">
+	  <h2>Get Involved</h2>
+	  <p>Contact Daniel Zappala (daniel.zappala@gmail.com) for
+	    research opportunities in the lab.</p>
+	  <p>Visit us at 2240 TMCB.</p>
+	</div>
       </div>
     </div>
 </div>
-
-<div class="light-gray">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12 smaller">
-	<h2>Get Involved</h2>
-	<p>Contact Daniel Zappala (daniel.zappala@gmail.com) for
-	  research opportunities in the lab.</p>
-	<p>Visit us at 2240 TMCB.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 {% endblock %}

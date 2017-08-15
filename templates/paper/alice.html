@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+<div class="container-fluid breadcrumbs">
+  <p>&raquo; Papers &raquo; <a href="/papers/alice">Alice</a></p>
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <h1>Is that you, Alice? A Usability Study of the Authentication
+	Ceremony of Secure Messaging Applications</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <h2>Citation</h2>
+
+      <p>Elham Vaziripour, Justin Wu, Mark O'Neill, Ray Clinton,
+	Jordan Whitehead, Scott Heidbrink, Kent Seamons, Daniel
+	Zappala, <a href="/static/papers/alice-soups-2017.pdf">Is that
+	you, Alice? A Usability Study of the Authentication Ceremony
+	of Secure Messaging Applications</a>, USENIX Symposium on
+	Usable Privacy and Security (SOUPS), July 2017<p>
+
+      <h2>Abstract</h2>
+
+      <p>
+	The effective security provided by secure messaging
+	applications depends heavily on users completing an
+	authentication ceremony&mdash;a sequence of manual operations
+	enabling users to verify they are indeed communicating with
+	one another.  Unfortunately, evidence to date suggests users
+	are unable to do this.  Accordingly, we study in detail how
+	well users can locate and complete the authentication ceremony
+	when they are aware of the need for authentication.  We
+	execute a two-phase study involving 36 pairs of participants,
+	using three popular messaging applications with support for
+	secure messaging functionality: WhatsApp, Viber, and Facebook
+	Messenger.  The first phase included instruction about
+	potential threats, while the second phase also included
+	instructions about the importance of the authentication
+	ceremony.  We find that, across the three apps, the average
+	success rates of finding and completing the authentication
+	ceremony increases from 14% to 79% from the first to second
+	phase, with second-phase success rates as high as 96% for
+	Viber.  However, the time required to find and complete the
+	ceremony is undesirably long from a usability standpoint, and
+	our data is inconclusive on whether users make the connection
+	between this ceremony and the security guarantees it
+	brings. We discuss in detail the success rates, task timings,
+	and user feedback for each application, as well as common
+	mistakes and user grievances.  We conclude by exploring user
+	threat models, finding significant gaps in user awareness and
+	understanding.
+      </p>
+      
+      <h2>Data</h2>
+
+      <p>The participant data from this study was collected using a Qualtrics survey.
+	The survey data is listed in <a href="/static/data/alice/alice-qualtrics.xlsx">alice-qualtrics.xslx</a>. Data
+	for the first phase consists of the following columns:</p>
+
+      <div class="definitions">
+	<span class="dlheader">qualtrics-data.xslx: Phase 1</span>
+	<dl>
+	  <dt>First App</dt>
+	  <dd>the first application used.</dd>
+	  <dt>Second App</dt>
+	  <dd>the second application used.</dd>
+	  <dt>Third App</dt>
+	  <dd>the third application used.</dd>
+	  <dt>Role</dt>
+	  <dd>the role played in the scenario.</dd>
+	  <dt>Gender</dt>
+	  <dd>gender of the participant.</dd>
+	  <dt>Age</dt>
+	  <dd>age of the participant.</dd>
+	  <dt>Education</dt>
+	  <dd>educational attainment.</dd>
+	  <dt>Major</dt>
+	  <dd>college major.</dd>
+	  <dt>Computer Knowledge</dt>
+	  <dd>multiple selections possible, chosen from list shown in paper.</dd>
+	  <dt>Prior Experience</dt>
+	  <dd>list of applications used previously.</dd>
+	  <dt>Status WhatsApp</dt>
+	  <dd>success or failure using the authentication ceremony in WhatsApp.</dd>
+	  <dt>Status Viber</dt>
+	  <dd>success or failure using the authentication ceremony in Viber.</dd>
+	  <dt>Status FBM</dt>
+	  <dd>success or failure using the authentication ceremony in Facebook Messenger.</dd>
+	  <dt>Mechanism for key verification WhatsApp</dt>
+	  <dd>the mechanism the participant used to verify the authenticity of the partner using WhatsApp.</dd>
+	  <dt>Mechanism for key verification Viber</dt>
+	  <dd>the mechanism the participant used to verify the authenticity of the partner using Viber.</dd>
+	  <dt>Mechanism for key verification FBM</dt>
+	  <dd>the mechanism the participant used to verify the authenticity of the partner using FBM.</dd>
+	  <dt>Trust Score WhatsApp</dt>
+	  <dd>trust scored with a Likert scale for WhatsApp.</dd>
+	  <dt>Trust Score Viber</dt>
+	  <dd>trust scored with a Likert scale for Viber.</dd>
+	  <dt>Trust Score FBM</dt>
+	  <dd>trust scored with a Likert scale for Facebook Messenger.</dd>
+	  <dt>Favorite</dt>
+	  <dd>favorite app.</dd>
+	  <dt>Favorite reason</dt>
+	  <dd>reason for ranking the above app as the favorite.</dd>
+	</dl>
+      </div>
+
+      <p>Data for the second phase also includes the following columns:</p>
+
+      <div class="definitions">
+	<span class="dlheader">qualtrics-data.xslx: Phase 2</span>
+	<dl>
+	  <dt>Self rate security knowledge</dt>
+	  <dd>Participant's assessment of their computer security knowledge, using scale shown in paper.</dd>
+	  <dt>Test score</dt>
+	  <dd>Score from 0-6 based on answering a series of questions testing computer security knowledge.</dd>
+	  <dt>Familiar with encryption</dt>
+	  <dd>How familiar participant was with encryption prior to the study, open response.</dd>
+	  <dt>Mistakes WhatsApp</dt>
+	  <dd>Mistakes participant made with WhatsApp.</dd>
+	  <dt>Mistakes Viber</dt>
+	  <dd>Mistakes participant made with Viber.</dd>
+	  <dt>Mistakes FBM</dt>
+	  <dd>Mistakes participant made with Facebook Messenger.</dd>
+	</dl>
+      </div>
+
+      <h2>Statistics</h2>
+
+      Using our data set we have calculated a variety of statistics
+      using SPSS. This data is collected
+      in <a href="/static/data/alice/alice-statistics.zip">alice-statistics.zip</a>. This
+      consists of four groups of statistical calculations:
+
+      <h3>Success and Failure Rates</h3>
+
+      <p>We measured whether the participants were successful in using
+	the authentication ceremony for each application in the second
+	phase of the study. This data is stored
+	in <b class="filename">SuccessFailStatus.sav</b> and contains X columns:</p>
+
+      <div class="definitions">
+	<span class="dlheader">SuccessFailStatus.sav</span>
+	<dl>
+	  <dt>Case</dt>
+	  <dd>A numeric identifier for the participant pair.</dd>
+	  <dt>WhatsApp</dt>
+	  <dd>The pair's success (1) or failure (0) for WhatsApp.</dd>
+	  <dt>Viber</dt>
+	  <dd>The pair's success (1) or failure (0) for Viber.</dd>
+	  <dt>FBM</dt>
+	  <dd>The pair's success (1) or failure (0) for Facebook Messenger.</dd>
+	</dl>
+      </div>
+      
+      <p>For this data we want to test whether there are any
+	differences between the applications.  Because the data is
+	dichotomous we used Cochran’s Q Test, followed by McNemar’s
+	test to find the significant differences among the pairs of
+	applications. These tests are found
+	in <b class="filename">Success-Fail-Tests.spv</b>.</p>
+
+      <h3>Task Completion Times</h3>
+
+      <p>In the second phase of the study we measured the time taken
+	by participants to (a) find the authentication ceremony and
+	(b) complete the authentication ceremony. This data is stored
+	in <b class="filename">SecondPhase.sav</b> and consists of the following
+	columns:</p>
+
+      <div class="definitions">
+	<span class="dlheader">SecondPhase.sav</span>
+	<dl>
+	  <dt>RawCompletionTaskTime</dt>
+	  <dd>The time it took to complete the task in minutes. This
+	    starts when the participant launched the application and
+	    ends when they sent the credit card number after
+	    authenticating properly.</dd>
+
+	  <dt>RawKeyFindingTime</dt>
+	  <dd>The time it took to find the authentication
+	    ceremony. This starts when the participant launched the
+	    application and ends when they saw the screen for the
+	    authentication ceremony.</dd>
+
+	  <dt>Status</dt>
+	  <dd>Whether the participant succeeded or failed at
+	    completing the authentication ceremony. We mark the status
+	    as a failure if the participant took longer than 10
+	    minutes to find the authentication ceremony passed or if
+	    they decided to send the credit card number to their
+	    partner without authenticating properly. We mark the
+	    status as a success otherwise. The value of 0 = fail and 1
+	    = success.</dd>
+
+	  <dt>LogCompletionTaskTime</dt>
+	  <dd>The log of the RawCompletionTaskTime field.</dd>
+
+	  <dt>LogKeyFindingTime</dt>
+	  <dd>The log of the RawKeyFindingTime field.</dd>
+
+	  <dt>Role</dt>
+	  <dd>The role of the participant in the scenario. 0 or A
+	    means the user had the role of the person who left his
+	    credit card at home, and 1 or B shows the role of the
+	    person who is at home and supposed to send the credit card
+	    number to his friend.</dd>
+
+	  <dt>SUS</dt>
+	  <dd>The partcipant's SUS score for the application, using
+	    the standard SUS questionnaire.</dd>
+
+	  <dt>TestScore</dt>
+	  <dd>A score from 0-6 based on answering a series of questions testing computer security knowledge</dd>
+
+	  <dt>TrustScore</dt>
+	  <dd>Answer to <i>I trust this application to be secure</i>,
+	    using a likert scale that varies between 1 = Strongly
+	    disagree to 5 = Strongly agree</dd>
+
+	  <dt>Order</dt>
+	  <dd>The order in which this participant used this
+	    application.</dd>
+
+	  <dt>Application</dt>
+	  <dd>The application name or number (1 = WhatsApp, 2 = Viber,
+	    3 = Facebook Messenger).</dd>
+
+	</dl>
+      </div>
+
+      <p>For this data we want to know if there is a significant
+	difference in the time to complete these tasks among the three
+	different applications tested—WhatsApp, Viber, and Facebook
+	Messenger.  We first tested for normality using the
+	Shapiro-Wilk test. This test is found
+	in <b class="filename">Timing-Shapiro-Wilk.spv</b>. We then ran the
+	Kruskal-Wallis test, found
+	in <b class="filename">Timing-Krukal-Wallis.spv</b>.</p>
+
+      <h3>Favorite Rankings</h3>
+
+      <p>In the second phase of the study we asked participants which
+	of the systems was their favorite. This data is stored
+	in <b class="filename">Favorites.sav</b>, which contains the following
+	columns:</p>
+
+      <div class="definitions">
+	<span class="dlheader">Favorites.sav</span>
+	<dl>
+	  <dt>FavoriteApp</dt>
+	  <dd>The application chosen as the favorite (WhatsApp = 1,
+	    Viber = 2, Facebook Messenger = 3).</dd>
+
+	  <dt>Phase</dt>
+	  <dd>The phase of the study. The values are either 1 or
+	    2.</dd>
+
+	  <dt>choseFBM</dt>
+	  <dd>Whether Facebook Messenger was chosen as the favorite
+	    application (0 or 1).</dd>
+	  
+	  <dt>chosenViber</dt>
+	  <dd>Whether Viber was chosen as the favorite application (0
+	    or 1).</dd>
+
+	  <dt>chosenWhatsApp</dt>
+	  <dd>Whether WhatsApp was chosen as the favorite application
+	    (0 or 1).</dd>
+
+	</dl>
+      </div>
+
+      <p>We want to test whether there are any differences between the
+	favorite rankings for each application between the two phases.
+	We ran a Chi-Square test, which is found
+	in <b class="filename">FavoriteApp-Chi-Square.spv</b>.</p>
+      
+      <h3>Trust Scores</h3>
+
+      <p>In both phases we asked participants the following question:</p>
+
+      <p><i>I trust this application to be secure.</i></p>
+
+      <i><ul>
+	<li>Strongly agree</li>
+	<li>Somewhat agree</li>
+	<li>Neither agree nor disagree</li>
+	<li>Somewhat disagree</li>
+	<li>Strongly disagree</li>
+      </ul></i>
+
+      <p>This data is stored in <b class="filename">Trust.sav</b> and contains three columns:</p>
+
+      <div class="definitions">
+	<span class="dlheader">Trust.sav</span>
+	<dl>
+	  <dt>Phase</dt>
+	  <dd>The phase of the study. The values are either 1 or
+	    2.</dd>
+
+	  <dt>TrustWhatsApp</dt>
+	  <dd>Answer to <i>I trust this application to be secure</i>,
+	    for WhatsApp, using a likert scale that varies between 1 =
+	    Strongly disagree to 5 = Strongly agree.</dd>
+
+	  <dt>TrustViber</dt>
+	  <dd>Answer to <i>I trust this application to be secure</i>,
+	    for Viber, using a likert scale that varies between 1 =
+	    Strongly disagree to 5 = Strongly agree.</dd>
+	
+	  <dt>TrustFBM</dt>
+	  <dd>Answer to <i>I trust this application to be
+	      secure</i>, for Facebook Messenger, using a likert scale that
+	    varies between 1 = Strongly disagree to 5 = Strongly agree.</dd>
+
+	</dl>
+      </div>
+
+      <p>For this data we ran a mixed model ANOVA Test because we are
+	interested in seeing the interaction between two independent
+	variables (application and phase). This test is found
+	in <b class="filename">Trust-Mixed-Model-Anova.spv</b>.</p>
+
+      <p>To determine whether there was a simple main effect for the
+	application, we ran a repeated measures ANOVA on each
+	phase. This test is found in <b class="filename">Trust-GLM-Phases.spv</b>.</p>
+
+      <p>To determine whether there was a simple main effect for the
+	study phase, we ran a one-way ANOVA on each application to
+	compare the trust between the two phases. These tests are
+	found
+	in <b class="filename">Trust-Univariate-WhatsApp-ByPhase.spv</b>, <b class="filename">Trust-Univariate-Viber-ByPhase.spv</b>,
+	and <b class="filename">Trust-Univariate-Facebook-ByPhase.spv</b>.</p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

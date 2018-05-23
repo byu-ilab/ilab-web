@@ -3,13 +3,13 @@
 {% block page %}
 
 <div class="container-fluid breadcrumbs">
-  <p>&raquo; Research &raquo; <a href="/research/alice">Alice</a></p>
+  <p>&raquo; Research &raquo; <a href="/research/alice">Authentication Ceremony</a></p>
 </div>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h1>Alice</h1>
+      <h1>Authentication Ceremony</h1>
     </div>
   </div>
 </div>
@@ -51,16 +51,21 @@
   <div class="row-fluid">
     <div class="col-md-12">
       
-      <h2>Survey</h2>
-      <p>We are currently conducting a <a href={{url_for("show",directory="research", page="telegram-survey")}}>survey of Telegram users</a>, with a focus on Iranians.<p>
-	
       <h2>Papers</h2>
 
       <ul>
+	<li>Elham Vaziripour, Reza Farahbakhsh, Mark O'Neill, Justin
+	  Wu, Kent Seamons, and Daniel Zappala, Private But Not Secure:
+	  A Survey Of the Privacy Preferences and Practices of Iranian
+	  Users of Telegram, Workshop on Usable Security (USEC),
+	  February 2018.
+	  <a href={{url_for("show",directory="paper",page="telegram")}}>Paper</a>
+	</li>
+
 	<li>Elham Vaziripour, Justin Wu, Mark O’Neill, Ray Clinton, Jordan Whitehead,
 	  Scott Heidbrink, Kent Seamons, Daniel Zappala, Is that you, Alice? A Usability Study of the Authentication
 	  Ceremony of Secure Messaging Applications, USENIX Symposium on Usable Privacy and Security (SOUPS), July 2017.
-	  <a href={{url_for("show",directory="paper",page="alice")}}/papers/alice">Paper</a>
+	  <a href={{url_for("show",directory="paper",page="alice")}}>Paper</a>
 	</li>
       </ul>
 

@@ -16,6 +16,8 @@ def index():
 @app.route('/<directory>/<page>')
 def show(directory,page):
     if not page:
+        if directory == 'robots.txt':
+            return render_template('/robots.txt')
         return render_template(directory+'.html',active=directory)
     return render_template(directory+"/" + page + '.html',active=directory)
     
